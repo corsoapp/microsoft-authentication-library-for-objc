@@ -48,6 +48,9 @@
  */
 @property (readonly, nonnull) NSDate *expiresOn;
 
+/*! The Refresh Token for this request. */
+@property (nonatomic, nullable) NSString *refreshToken;
+
 /**
     Some access tokens have extended lifetime when server is in an unavailable state.
     This property indicates whether the access token is returned in such a state.
